@@ -225,3 +225,32 @@
       </div>
     </div>
   </nav>
+
+<script>
+  let toggleIcon=document.getElementsByClassName("navbar-toggler-icon")[0];
+    toggleIcon.addEventListener('click',()=>{
+    let filterid=document.getElementById("filters");
+    filterid.classList.add('responsiveProperty');
+  });
+
+
+  let lastScrollTop = 0;
+const navbarCollapse = document.querySelector('.navbar-collapse');
+
+window.addEventListener('scroll', function() {
+    // Check if the viewport width is 600px or less
+    if (window.innerWidth <= 600) {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            navbarCollapse.style.opacity = '0';
+        } else {
+            navbarCollapse.style.opacity = '1';
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    }
+});
+
+
+</script>
