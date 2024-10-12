@@ -135,7 +135,6 @@ body{
 .filter:hover{
     opacity: 1;
     cursor: pointer;
-    border-bottom:2px solid black;
 }
 
 .tex-info{
@@ -185,9 +184,9 @@ body{
     display: block;
 }
 
-.responsiveProperty{
+/* .responsiveProperty{
     margin-top: 176px;
-}
+} */
 
 .navbar-collapse {
     opacity: 1;
@@ -213,6 +212,45 @@ body{
     }
 
     .navbar-collapse {
-        transition: opacity 0.3s ease; /* Ensure the collapse also has a transition */
+        transition: opacity 0.3s ease;
     }
 }
+
+#map{
+    border: 3px solid #d3d3d3;
+    margin: auto;
+    border-radius:10px;
+    background: linear-gradient(45deg, rgba(255, 0, 150, 0.7), rgba(0, 150, 255, 0.7));
+}
+
+
+
+@media (max-width: 768px) {
+    .toggleClass{
+        height:400px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .childCard{
+        margin-left:-0px;
+        align-items: center;
+    }
+  }
+  
+  .reviewClass{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .f-info-socials i{
+    transition: 0.5s;
+    margin-left:5px;
+  }
+  .f-info-socials i:hover{
+    transform:scale(1.2);
+    margin-left:5px;
+    margin-right: 5px;
+  }
