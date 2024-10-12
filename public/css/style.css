@@ -10,6 +10,11 @@ body{
 .navbar{
     height: 5rem;
     background-color: white;
+    position: relative;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(90deg, #ff7f50, #1e90ff, #ff7f50);
+    border-image-slice: 1;
+    animation: border-gradient 3s infinite;
 }
 .fa-plane{
     color: #fe424d;
@@ -254,3 +259,81 @@ body{
     margin-left:5px;
     margin-right: 5px;
   }
+
+
+
+  @media only screen and (max-width: 768px) {
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+      }
+  }
+
+  .loginpage{
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 60%;
+    background-image: linear-gradient(white, white), linear-gradient(45deg, #ff7f50, #1e90ff, #ff1493, #1e90ff);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    padding: 10px;
+    animation: moveGradient 4s infinite;
+  }
+
+  .login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .signupPage{
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 60%;
+    background-image: linear-gradient(white, white), linear-gradient(45deg, #ff7f50, #1e90ff, #ff1493, #1e90ff);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    padding: 10px;
+    animation: moveGradient 4s infinite;
+  }
+
+  @keyframes moveGradient {
+    0% {
+        background-image: linear-gradient(white, white), linear-gradient(45deg, #ff7f50, #1e90ff, #ff1493, #1e90ff);
+    }
+    50% {
+        background-image: linear-gradient(white, white), linear-gradient(45deg, #1e90ff, #ff1493, #ff7f50, #ff1493);
+    }
+    100% {
+        background-image: linear-gradient(white, white), linear-gradient(45deg, #ff7f50, #1e90ff, #ff1493, #1e90ff);
+    }
+}
+
+.newListing{
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 70%;
+    background-image: linear-gradient(white, white), linear-gradient(45deg, #ff7f50, #ff1493, #1e90ff, #ff7f50);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    padding: 10px;
+    animation: moveGradientNew 4s infinite;
+}
+
+@keyframes moveGradientNew {
+    0% {
+        background-image: linear-gradient(white, white), linear-gradient(45deg, #ffe4e1, #ffebcd, #fafad2, #e6e6fa);
+    }
+    50% {
+        background-image: linear-gradient(white, white), linear-gradient(45deg, #ffebcd, #fafad2, #ffe4e1, #e6e6fa);
+    }
+    100% {
+        background-image: linear-gradient(white, white), linear-gradient(45deg, #ffe4e1, #ffebcd, #fafad2, #e6e6fa);
+    }
+}

@@ -1,6 +1,7 @@
 <% layout("/layouts/boilerPlate.ejs") -%>
-    <div class="row  mt-3">
-        <h1 class="col-6 offset-3">SignUp on Wonderlust</h1>
+<div class=" login-container mt-5">
+    <div class="row signupPage  mt-3">
+        <h1 class="col-6 offset-3 d-flex align-item-center justify-content-center">SignUp on Wonderlust</h1>
         <div class="col-6 offset-3">
             <form method="POST" action="/signup" class="needs-validation" novalidate>
 
@@ -14,7 +15,8 @@
                 <label for="password" class="form-label">Password</label>
                 <input required type="password" name="password"  class="form-control">
 
-                <button class="btn btn-success mt-3">SignUp</button>
+                <div class="d-flex align-item-center justify-content-center mb-3"><button class="btn btn-success mt-3">SignUp</button></div>
             </form>
         </div>
     </div>
+</div>
