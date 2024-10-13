@@ -337,3 +337,10 @@ body{
         background-image: linear-gradient(white, white), linear-gradient(45deg, #ffe4e1, #ffebcd, #fafad2, #e6e6fa);
     }
 }
+
+
+@media only screen and (max-width: 768px) {
+    .searchOption{
+        margin: auto;
+      }
+  }
