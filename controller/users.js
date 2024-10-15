@@ -21,7 +21,7 @@ module.exports.createSignupUser= async(req,res,next)=>{
         if(err){
             next(err)
         }
-        req.flash("success","Welcome to WonderLust")
+        req.flash("success","Welcome to placenest")
         res.redirect("/listings");
     })
     }
@@ -41,7 +41,7 @@ module.exports.createLoginRoute= async(req,res,next)=>{
         // req.flash("success","Welcome Back to WonderLust");
         // console.log(res.locals.redirectUrl)
         // res.redirect(res.locals.redirectUrl);
-        req.flash("success","Welcome to wonderlust! You are logged in.");
+        req.flash("success","Welcome to placenest! You are logged in.");
         let isredirectUrl=res.locals.redirectUrl;
         if(isredirectUrl){
             res.redirect(isredirectUrl);
