@@ -344,3 +344,29 @@ body{
         margin: auto;
       }
   }
+
+
+
+
+  @media only screen and (max-width: 768px) {
+    .searchForm{
+        margin-top:2rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width:70%;
+      }
+    .btn-search{
+        margin: auto;
+        width:40%;
+        height: 30px;
+        margin-top:1rem;
+    }
+  }
+
+ 
+  @media only screen and (max-width: 768px) {
+    .nav-link{
+        margin-top: -0.5rem;
+      }
+  }
